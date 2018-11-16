@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inoutitem"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        >
+        <TextView android:id="@+id/inouttitle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="出货管理"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            >
+            <TextView android:layout_width="90dp"
+                android:id="@+id/tvInOutMany"
+                android:textSize="20sp"
+                android:text="数  量："
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtInOutMany"
+                android:layout_alignBottom="@+id/txtInOutMany"
+                android:layout_alignParentLeft="true"
+               >
+            </TextView>
+            <EditText
+                android:id="@+id/txtInOutMany"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvInOutMany"
+                android:inputType="number"
+                android:numeric="integer"
+                android:maxLength="9"
+                />
+            <TextView android:layout_width="90dp"
+                android:id="@+id/tvInOutTime"
+                android:textSize="20sp"
+                android:text="时  间："
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtInOutTime"
+                android:layout_alignBottom="@+id/txtInOutTime"
+              >
+            </TextView>
+            <EditText
+                android:id="@+id/txtInOutTime"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvInOutTime"
+                android:layout_below="@id/txtInOutMany"
+                android:inputType="datetime"
+                />
+            <TextView android:layout_width="90dp"
+                android:id="@+id/tvInOutType"
+                android:textSize="20sp"
+                android:text="类  别："
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/spInOutType"
+                android:layout_alignBottom="@+id/spInOutType"
+                android:layout_alignLeft="@+id/tvInOutTime">
+            </TextView>
+            <Spinner android:id="@+id/spInOutType"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvInOutType"
+                android:layout_below="@id/txtInOutTime"
+                android:entries="@array/type"
+                android:textColor="#000000"
+                />
+            <TextView android:layout_width="90dp"
+                android:id="@+id/tvInOutHandler"
+                android:textSize="20sp"
+                android:text="经手人："
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtInOutHandler"
+                android:layout_alignBottom="@+id/txtInOutHandler"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/txtInOutHandler"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvInOutHandler"
+                android:layout_below="@id/spInOutType"
+                android:singleLine="false"
+                />
+            <TextView android:layout_width="90dp"
+                android:id="@+id/tvInOutMark"
+                android:textSize="20sp"
+                android:text="备  注："
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txtInOutMark"
+               >
+            </TextView>
+            <EditText
+                android:id="@+id/txtInOutMark"
+                android:layout_width="210dp"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/tvInOutMark"
+                android:layout_below="@id/txtInOutHandler"
+                android:gravity="top"
+                android:singleLine="false"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        >
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            >
+            <Button
+                android:id="@+id/btnInOutDelete"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:text="删除"
+                />
+            <Button
+                android:id="@+id/btnInOutEdit"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnInOutDelete"
+                android:text="修改"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

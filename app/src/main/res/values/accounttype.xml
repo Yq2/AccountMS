@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="outtype">
+	   <item>机械</item>
+	   <item>电子</item>
+	   <item>化工</item>
+	   <item>生物</item>
+	   <item>教育</item>
+	   <item>微原件</item>
+	   <item>土木</item>
+	   <item>生活日化</item>
+	   <item>其他</item>
+   </string-array>
+   <string-array name="intype">
+	   <item>机械</item>
+	   <item>电子</item>
+	   <item>化工</item>
+	   <item>生物</item>
+	   <item>教育</item>
+	   <item>微原件</item>
+	   <item>土木</item>
+	   <item>生活日化</item>
+	   <item>其他</item>
+   </string-array>
+   <string-array name="type">
+	   <item>机械</item>
+	   <item>电子</item>
+	   <item>化工</item>
+	   <item>生物</item>
+	   <item>教育</item>
+	   <item>微原件</item>
+	   <item>土木</item>
+	   <item>生活日化</item>
+	   <item>其他</item>
+   </string-array>
+</resources>

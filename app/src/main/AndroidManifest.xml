@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="activity.accountsoft.yq.com.accountms" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yq.accountsoft.activity.Login"
+            android:label="企业货物管理" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.AddOutGoods"
+            android:label="@string/title_activity_add_outgoods" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.AddInGoods"
+            android:label="@string/title_activity_add_ingoods" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.OutGoodsInfo"
+            android:label="@string/title_activity_out_goods_info" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.InGoodsInfo"
+            android:label="@string/title_activity_in_goods_info" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.ShowInfo"
+            android:label="@string/title_activity_show_info" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.SystemSet"
+            android:label="@string/title_activity_system_set" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.GoodsFlag"
+            android:label="@string/title_activity_account_flag" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.InfoManage"
+            android:label="@string/title_activity_info_manage" >
+        </activity>
+        <activity
+            android:name="com.yq.accountsoft.activity.FlagManage"
+            android:label="@string/title_activity_flag_manage" >
+        </activity>
+
+        <service
+            android:name="com.yq.accountsoft.db.MyDbService"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>
